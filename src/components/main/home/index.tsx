@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import CommunityPost from '../../data/CommunityPost.ts';
 import Post from '../../data/Post.ts';
-import PostHorizontalList from '../../common/postList/horizontal/PostHorizontalList';
-import PostVerticalList from '../../common/postList/vertical/PostVerticalList';
+import PostHorizontalList from '../../common/postList/horizontal/PostHorizontalList.tsx';
+import PostVerticalList from '../../common/postList/vertical/PostVerticalList.tsx';
 import * as S from './style.ts';
 
 const communityPostList : CommunityPost[] = [
@@ -131,8 +131,8 @@ function Home() {
                 <S.NotificationBox>
                 </S.NotificationBox>
             </S.AdContainer>
-            <div id='subBanner'>
-            </div>
+            <S.SubBanner>
+            </S.SubBanner>
             <PostHorizontalList postList={postList} subjectTxt='대회안내' path='/rally'/>
             <PostHorizontalList postList={postList} subjectTxt='구인공고' path='/job'/>
             <PostVerticalList postList={communityPostList} subjectTxt='커뮤니티' path='/community'/>

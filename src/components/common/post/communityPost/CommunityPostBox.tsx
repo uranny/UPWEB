@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import './CommunityPostBox.css';
+import * as S from './CommunityPostBoxStyle.ts';
 
 function CommunityPostBox(
     {post}
 ){
     return (
-        <>
-        </>
+        <S.PostItemContainer>
+
+        </S.PostItemContainer>
     );
 }
 

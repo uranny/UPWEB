@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import './PostHorizontalList.css';
-import PostBox from '../../post/rallyPost/PostBox';
+import PostBox from '../../post/rallyPost/PostBox.tsx';
 import { VariableSizeList as List } from "react-window";
 import AutoSizer from "react-virtualized-auto-sizer";
 import { Link } from "react-router-dom";
+import * as S from "./PostHorizontalListStyle.ts"
 
-function PostVerticalList(
+function PostHorizontalList(
     {postList, subjectTxt, path}
 ){
 
@@ -34,14 +34,16 @@ function PostVerticalList(
     }
 
     return (
-        <div id='listContainer'>
-            <span id='subjectTxt'>{subjectTxt}</span>
-            <span id='moreTxt'>
+        <S.ListContainer>
+            <S.SubjectTxt>
+                {subjectTxt}
+            </S.SubjectTxt>
+            <S.MoreTxt>
                 <Link to={path} className='navLink'>
                     더보기
                 </Link>
-            </span>
-            <div id='postContainer'>
+            </S.MoreTxt>
+            <S.PostContainer>
                 <AutoSizer>
                     {({width, height}) => (
                         <List
@@ -54,9 +56,9 @@ function PostVerticalList(
                         </List>
                     )}
                 </AutoSizer>
-            </div>
-        </div>
+            </S.PostContainer>
+        </S.ListContainer>
     );
 }
 
-export default PostVerticalList;
+export default PostHorizontalList;

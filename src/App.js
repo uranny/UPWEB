@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Header from '../src/components/common/header/Header';
-import BottomBar from '../src/components/common/bottombar/BottomBar.tsx';
+import Header from '../src/components/common/header/Header.tsx';
+import Footer from './components/common/footer/Footer.tsx';
 import Home from './components/main/home/index.tsx';
 import Rally from './components/main/rally/index.tsx';
 import Community from './components/main/community/index.tsx';
@@ -21,7 +21,7 @@ function App() {
                 <Route path="/login" element={Login()} />
                 <Route path="/register" element={Register()} />
             </Routes>
-            <BottomBar/>
+            <Footer/>
         </Router>
     );
 }

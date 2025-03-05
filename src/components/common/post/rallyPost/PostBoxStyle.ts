@@ -1,26 +1,28 @@
-#postItemContainer{
+import styled from "styled-components";
+
+export const PostItemContainer = styled.div`
     width: 300px;
     margin: 0px;
     position:relative;
-}
+`;
 
-#postImgBox{
+export const PostImgBox = styled.div `
     width: 100%;
     height: 180px;
     background-color: black;
     border-radius: 5px;
     position:relative;
-}
+`;
 
-#postImg{
+export const PostImg = styled.img`
     color: white;
     border-radius: 5px;
     width: 100%;
     height: 180px;
     object-fit:contain;
-}
+`;
 
-#category{
+export const Category = styled.div`
     position: absolute;
     right: 8px;
     bottom: 12px;
@@ -33,9 +35,9 @@
     border-color: black;
     border-style: solid;
     border-radius: 20px;
-}
+`;
 
-#titleTxt{
+export const TitleTxt = styled.div`
     width: calc(100% - 12px);
     margin-left: 6px;
     margin-right: 6px;
@@ -45,9 +47,9 @@
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-}
+`;
 
-#timeTxt{
+export const TimeTxt = styled.div`
     width: calc(100% - 12px);
     margin-left: 6px;
     margin-right: 6px;
@@ -58,9 +60,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
     color: #7F7F7F;
-}
+`;
 
-#masterTxt{
+export const MasterTxt = styled.div`
     width: calc(100% - 12px);
     margin-left: 6px;
     margin-right: 6px;
@@ -70,11 +72,11 @@
     overflow: hidden;
     text-overflow: ellipsis;
     color: #7F7F7F;
-}
+`;
 
-#bookMarkBtn{
+export const BookMarkBtn = styled.img`
     width: 28px;
     position: absolute;
     bottom: 12px;
     right: 6px;
-}
+`;

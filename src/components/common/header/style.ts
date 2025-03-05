@@ -1,15 +1,18 @@
-#main{
-    background-color: black;
-}
+import styled from "styled-components";
+import { Link } from "react-router-dom";
 
-#img{
+export const Main = styled.div`
+    background-color: black;
+`;
+
+export const Img = styled.img`
     user-select: none;
     width: 70px;
     height: 70dx;
-    margin-left: 119px;
-}
+    margin-left: 8%;
+`;
 
-.contentBox{
+export const ContentBox = styled.div`
     user-select: none;
     display: flex;
     justify-content: center;
@@ -17,9 +20,9 @@
     height: 70px;
     float: right;
     margin-right: 105px;
-}
+`;
 
-.childNav{
+export const ChildNav = styled.div`
     text-decoration: none;
     user-select: none;
     display: inline-block;
@@ -29,21 +32,30 @@
     text-align: center;
     padding: 8px 22px 8px 22px;
     margin: auto auto;
-}
+`;
 
 
-.navLink{
+export const NavLink = styled(Link)`
     text-decoration: none;
     color: inherit;
-}
 
-.navLink:hover{
+    &:hover{
     text-decoration: none;
     color: #7a7a7a;
-}
+    }
+`;
 
-#loginBtn{
+export const LoginBtn = styled(Link)`
     background-color: #3c3c3c;
     color: white;
     border-radius: 5px;
-}
+    text-decoration: none;
+    user-select: none;
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 8px 22px 8px 22px;
+    margin: auto auto;
+`;
