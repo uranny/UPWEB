@@ -1,0 +1,80 @@
+#postItemContainer{
+    width: 300px;
+    margin: 0px;
+    position:relative;
+}
+
+#postImgBox{
+    width: 100%;
+    height: 180px;
+    background-color: black;
+    border-radius: 5px;
+    position:relative;
+}
+
+#postImg{
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+    height: 180px;
+    object-fit:contain;
+}
+
+#category{
+    position: absolute;
+    right: 8px;
+    bottom: 12px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 24px;
+    padding-right: 24px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 20px;
+}
+
+#titleTxt{
+    width: calc(100% - 12px);
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight:600;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+#timeTxt{
+    width: calc(100% - 12px);
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-top: 4px;
+    font-size: 16px;
+    font-weight:400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #7F7F7F;
+}
+
+#masterTxt{
+    width: calc(100% - 12px);
+    margin-left: 6px;
+    margin-right: 6px;
+    font-size: 16px;
+    font-weight:400;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #7F7F7F;
+}
+
+#bookMarkBtn{
+    width: 28px;
+    position: absolute;
+    bottom: 12px;
+    right: 6px;
+}

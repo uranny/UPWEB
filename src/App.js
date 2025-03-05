@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Header from './header/Header';
+import BottomBar from './bottombar/BottomBar';
+import Home from './page/Home';
+import Rally from './page/Rally';
+import Job from './page/Job';
+import Community from './page/Community';
+import Login from './page/Login';
+import Register from './page/Register';
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Router>
+            <Header/>
+            <Routes>
+                <Route path="/" element={Home()} />
+                <Route path="/rally" element={Rally()} />
+                <Route path="/job" element={Job()} />
+                <Route path="/community" element={Community()} />
+                <Route path="/login" element={Login()} />
+                <Route path="/register" element={Register()} />
+            </Routes>
+            <BottomBar/>
+        </Router>
+    );
 }
 
 export default App;

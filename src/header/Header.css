@@ -1,0 +1,49 @@
+#main{
+    background-color: black;
+}
+
+#img{
+    user-select: none;
+    width: 70px;
+    height: 70dx;
+    margin-left: 119px;
+}
+
+.contentBox{
+    user-select: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    float: right;
+    margin-right: 105px;
+}
+
+.childNav{
+    text-decoration: none;
+    user-select: none;
+    display: inline-block;
+    color: white;
+    font-size: 16px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 8px 22px 8px 22px;
+    margin: auto auto;
+}
+
+
+.navLink{
+    text-decoration: none;
+    color: inherit;
+}
+
+.navLink:hover{
+    text-decoration: none;
+    color: #7a7a7a;
+}
+
+#loginBtn{
+    background-color: #3c3c3c;
+    color: white;
+    border-radius: 5px;
+}
