@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './PostHorizontalList.css';
-import PostBox from '../../post/rally/PostBox';
+import PostBox from '../../post/rallyPost/PostBox';
 import { VariableSizeList as List } from "react-window";
 import AutoSizer from "react-virtualized-auto-sizer";
 import { Link } from "react-router-dom";

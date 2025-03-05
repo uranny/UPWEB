@@ -1,17 +1,17 @@
 import React, { useState } from 'react';
-import './Home.css';
-import CommunityPost from '../../data/CommunityPost';
-import Post from '../../data/Post';
+import CommunityPost from '../../data/CommunityPost.ts';
+import Post from '../../data/Post.ts';
 import PostHorizontalList from '../../common/postList/horizontal/PostHorizontalList';
 import PostVerticalList from '../../common/postList/vertical/PostVerticalList';
+import * as S from './style.ts';
 
-const communityPostList = [
+const communityPostList : CommunityPost[] = [
     new CommunityPost({
         category : "잡담",
         title : "제목",
         master : "uranny",
         createTime : new Date(2024, 10, 16), 
-        comment : ["", "", ""]
+        comment : ['', '', '']
     }),
 
     new CommunityPost({
@@ -122,21 +122,21 @@ const postList = [
 
 function Home() {
     return (
-        <div id='parentContainer'>
-            <div id='adContainer'>
-                <div id='mainBanner'>
-                </div>
-                <div id='qrBox'>
-                </div>
-                <div id='notification'>
-                </div>
-            </div>
+        <S.HomeContainer>
+            <S.AdContainer>
+                <S.MainBanner>
+                </S.MainBanner>
+                <S.QrBox>
+                </S.QrBox>
+                <S.NotificationBox>
+                </S.NotificationBox>
+            </S.AdContainer>
             <div id='subBanner'>
             </div>
             <PostHorizontalList postList={postList} subjectTxt='대회안내' path='/rally'/>
             <PostHorizontalList postList={postList} subjectTxt='구인공고' path='/job'/>
             <PostVerticalList postList={communityPostList} subjectTxt='커뮤니티' path='/community'/>
-        </div>
+        </S.HomeContainer>
     );
 }
 

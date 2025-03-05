@@ -1,4 +1,12 @@
-class Post{
+export default class Post{
+    img : String
+    title : String
+    startTime : Date
+    endTime : Date
+    master : String
+    category : String
+    bookMark : Boolean
+
     constructor({
         img = "",
         title = "", 
@@ -19,5 +27,3 @@ class Post{
         this.bookMark = !this.bookMark;
     }
 }
-
-export default Post;
