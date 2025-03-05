@@ -18,7 +18,6 @@ function App() {
                 <Route path="/" element={Home()} />
                 <Route path="/rally" element={Rally()} />
                 <Route path="/job" element={Job()} />
-                <Route path="/community" element={Community()} />
                 <Route path="/login" element={Login()} />
                 <Route path="/register" element={Register()} />
             </Routes>

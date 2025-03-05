@@ -1,12 +1,13 @@
 import React, { useState } from 'react';
-import './BottomBar.css';
+import './BottomBar.ts';
 import titleLogoImage from '../../../assets/titleLogo.png'
+import { BottomBarContainer, FooterImg } from './BottomBar.ts';
 
 function BottomBar() {
     return (
-        <div id='bottomBarBox'>
-            <img id='titleImg' src={titleLogoImage}/>
-        </div>
+        <BottomBarContainer>
+            <FooterImg src={titleLogoImage}/>
+        </BottomBarContainer>
     );
 }
 

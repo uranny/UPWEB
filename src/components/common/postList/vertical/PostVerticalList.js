@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './PostVerticalList.css';
-import CommunityPostBox from '../../post/CommunityPostBox';
+import CommunityPostBox from '../../post/community/CommunityPostBox';
 import { VariableSizeList as List } from "react-window";
 import AutoSizer from "react-virtualized-auto-sizer";
 import { Link } from "react-router-dom";
