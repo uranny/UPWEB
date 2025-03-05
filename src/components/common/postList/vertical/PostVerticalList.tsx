@@ -25,9 +25,9 @@ function PostVerticalList(
         <S.ListContainer>
             <S.SubjectTxt>{subjectTxt}</S.SubjectTxt>
             <S.MoreTxt>
-                <Link to={path} className='navLink'>
+                <S.NavLink to={path}>
                     더보기
-                </Link>
+                </S.NavLink>
             </S.MoreTxt>
             <S.PostContainer>
                 <AutoSizer>

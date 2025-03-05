@@ -5,8 +5,8 @@ import Home from './components/main/home/index.tsx';
 import Rally from './components/main/rally/index.tsx';
 import Community from './components/main/community/index.tsx';
 import Job from './components/main/job/index.tsx';
-import Login from '../src/components/auth/login/Login';
-import Register from '../src/components/auth/register/Register';
+import Login from '../src/components/auth/login/Login.tsx';
+import Register from '../src/components/auth/register/Register.tsx';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {

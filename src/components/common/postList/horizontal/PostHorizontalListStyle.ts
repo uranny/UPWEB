@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const ListContainer = styled.div`
     overflow: hidden;
@@ -25,4 +26,14 @@ export const PostContainer = styled.div`
     margin-top: 12px;
     margin-left: 8px;
     margin-right: 8px;
+`;
+
+export const NavLink = styled(Link)`
+    text-decoration: none;
+    color: inherit;
+
+    &:hover{
+    text-decoration: none;
+    color: #7a7a7a;
+    }
 `;

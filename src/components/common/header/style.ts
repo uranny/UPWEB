@@ -58,4 +58,9 @@ export const LoginBtn = styled(Link)`
     text-align: center;
     padding: 8px 22px 8px 22px;
     margin: auto auto;
+
+    &:hover{
+        text-decoration: none;
+        color: #7a7a7a;
+        }
 `;
