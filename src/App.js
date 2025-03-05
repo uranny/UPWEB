@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import './App.css';
-import Header from './header/Header';
-import BottomBar from './bottombar/BottomBar';
-import Home from './page/Home';
-import Rally from './page/Rally';
-import Job from './page/Job';
-import Community from './page/Community';
-import Login from './page/Login';
-import Register from './page/Register';
+import Header from '../src/components/common/header/Header';
+import BottomBar from '../src/components/common/bottombar/BottomBar.tsx';
+import Home from '../src/components/home/Home/Home';
+import Rally from '../src/components/home/rally/Rally';
+import Job from '../src/components/home/job/Job';
+import Community from '../src/components/home/community/Community';
+import Login from '../src/components/auth/login/Login';
+import Register from '../src/components/auth/register/Register';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {

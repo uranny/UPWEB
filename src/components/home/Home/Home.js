@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import './Home.css';
-import CommunityPost from '../data/CommunityPost';
-import Post from '../data/Post';
-import PostHorizontalList from '../postList/PostHorizontalList';
-import PostVerticalList from '../postList/PostVerticalList';
+import CommunityPost from '../../data/CommunityPost';
+import Post from '../../data/Post';
+import PostHorizontalList from '../../common/postList/horizontal/PostHorizontalList';
+import PostVerticalList from '../../common/postList/vertical/PostVerticalList';
 
 const communityPostList = [
     new CommunityPost({

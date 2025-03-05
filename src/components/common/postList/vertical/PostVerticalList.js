@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './PostHorizontalList.css';
-import PostBox from '../post/PostBox';
+import './PostVerticalList.css';
+import CommunityPostBox from '../../post/CommunityPostBox';
 import { VariableSizeList as List } from "react-window";
 import AutoSizer from "react-virtualized-auto-sizer";
 import { Link } from "react-router-dom";
@@ -8,21 +8,9 @@ import { Link } from "react-router-dom";
 function PostVerticalList(
     {postList, subjectTxt, path}
 ){
-
-    const itemWidth = 300;
-    const itemPadding = 32;
-    const totalSize = itemWidth + itemPadding
-
-    function setPadding(index){
-        if(index === postList.length-1){
-            return 0
-        }
-        return itemPadding
-    }
-
-    const Post = ({index, style}) => (
-        <div style={{...style, width:itemWidth, paddingRight:setPadding(index)}}>
-            <PostBox post={postList[index]}/>
+    const CommunityPost = ({index, style}) => (
+        <div style={{...style}}>
+            <CommunityPostBox post={postList[index]}/>
         </div>
     );
 
@@ -30,7 +18,7 @@ function PostVerticalList(
         if(index === postList.length-1){
             return 300
         }
-        return totalSize
+        return 334
     }
 
     return (
@@ -49,8 +37,8 @@ function PostVerticalList(
                         height={height} 
                         itemCount={postList.length}
                         itemSize={getItemSize}
-                        layout='horizontal'>
-                            {Post}
+                        layout='vertical'>
+                            {CommunityPost}
                         </List>
                     )}
                 </AutoSizer>
