@@ -8,7 +8,7 @@ import * as S from './style.ts';
 const communityPostList : CommunityPost[] = [
     new CommunityPost({
         category : "잡담",
-        title : "제목",
+        title : "제목1",
         master : "uranny",
         createTime : new Date(2024, 10, 16), 
         comment : ['', '', '']
@@ -16,7 +16,7 @@ const communityPostList : CommunityPost[] = [
 
     new CommunityPost({
         category : "잡담",
-        title : "제목",
+        title : "제목2",
         master : "uranny",
         createTime : new Date(2024, 10, 16), 
         comment : ["", "", ""]
@@ -24,22 +24,14 @@ const communityPostList : CommunityPost[] = [
 
     new CommunityPost({
         category : "잡담",
-        title : "제목",
+        title : "제목3",
         master : "uranny",
         createTime : new Date(2024, 10, 16), 
         comment : ["", "", ""]
     }),
     new CommunityPost({
         category : "잡담",
-        title : "제목",
-        master : "uranny",
-        createTime : new Date(2024, 10, 16), 
-        comment : ["", "", ""]
-    }),
-
-    new CommunityPost({
-        category : "잡담",
-        title : "제목",
+        title : "제목4",
         master : "uranny",
         createTime : new Date(2024, 10, 16), 
         comment : ["", "", ""]
@@ -47,7 +39,31 @@ const communityPostList : CommunityPost[] = [
 
     new CommunityPost({
         category : "잡담",
-        title : "제목",
+        title : "제목5",
+        master : "uranny",
+        createTime : new Date(2024, 10, 16), 
+        comment : ["", "", ""]
+    }),
+
+    new CommunityPost({
+        category : "잡담",
+        title : "제목6",
+        master : "uranny",
+        createTime : new Date(2024, 10, 16), 
+        comment : ["", "", ""]
+    }),
+
+    new CommunityPost({
+        category : "잡담",
+        title : "제목7",
+        master : "uranny",
+        createTime : new Date(2024, 10, 16), 
+        comment : ["", "", ""]
+    }),
+
+    new CommunityPost({
+        category : "잡담",
+        title : "제목8",
         master : "uranny",
         createTime : new Date(2024, 10, 16), 
         comment : ["", "", ""]

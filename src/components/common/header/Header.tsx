@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import * as S from './style.ts';
 import logoImage from '../../../assets/drawLogo.png';
-import { Link } from "react-router-dom";
 
 function Header() {
     return (

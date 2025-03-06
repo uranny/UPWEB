@@ -1,9 +1,9 @@
 export default class CommunityPost {
-    category: string;
-    title: string;
-    master: string;
+    category: String;
+    title: String;
+    master: String;
     createTime: Date;
-    comment: string[];
+    comment: String[];
 
     constructor({
         category = "",
@@ -13,5 +13,13 @@ export default class CommunityPost {
         comment = [] as string[]
     } = {}) {
         Object.assign(this, { category, title, master, createTime, comment });
+    }
+
+    toTimeTxt(){
+        return `${this.createTime.toISOString().split('T')[0]}`
+    }
+
+    toCommentTxt(){
+        return `${this.comment.length}`
     }
 }

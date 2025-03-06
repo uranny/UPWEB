@@ -20,18 +20,16 @@ export const MoreTxt = styled.span`
 `
 
 export const PostContainer = styled.div`
-    width: calc(100%-16px);
-    height: 270px;
+    width: 100%;
+    max-height: 246px;
     padding: 4px;
     margin-top: 12px;
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-bottom: 78px;
 `
 
 export const NavLink = styled(Link)`
     text-decoration: none;
     color: inherit;
-
     &:hover{
     text-decoration: none;
     color: #7a7a7a;

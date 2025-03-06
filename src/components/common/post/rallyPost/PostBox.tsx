@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import BookMarkImg from '../../../../assets/bookMark.png';
-import * as S from './PostBoxStyle.ts'
+import * as S from './style.ts'
 
 function PostBox(
     {post}

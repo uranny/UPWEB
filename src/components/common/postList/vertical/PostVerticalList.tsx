@@ -1,24 +1,22 @@
 import React, { useState } from 'react';
 import CommunityPostBox from '../../post/communityPost/CommunityPostBox.tsx';
+import CommunityPost from '../../../data/CommunityPost.ts';
 import { VariableSizeList as List } from "react-window";
+import { To } from 'react-router-dom';
 import AutoSizer from "react-virtualized-auto-sizer";
-import { Link } from "react-router-dom";
-import * as S from "./PostVerticalListStyle.ts"
+import * as S from "./style.ts"
 
 function PostVerticalList(
-    {postList, subjectTxt, path}
+    {postList, subjectTxt, path} : {postList : CommunityPost[]; subjectTxt : string; path : To;}
 ){
-    const CommunityPost = ({index, style}) => (
-        <div style={{...style}}>
+    const CommunityItem = ({index}) => (
+        <div>
             <CommunityPostBox post={postList[index]}/>
         </div>
     );
 
-    const getItemSize = index => {
-        if(index === postList.length-1){
-            return 300
-        }
-        return 334
+    const getItemSize = (index) => {
+        return 41
     }
 
     return (
@@ -29,7 +27,8 @@ function PostVerticalList(
                     더보기
                 </S.NavLink>
             </S.MoreTxt>
-            <S.PostContainer>
+            <S.PostContainer style={{height: `${postList.length * 41}px`}}>
+                <CommunityPostBox post={null}/>
                 <AutoSizer>
                     {({width, height}) => (
                         <List
@@ -37,14 +36,14 @@ function PostVerticalList(
                         height={height} 
                         itemCount={postList.length}
                         itemSize={getItemSize}
+                        overscanCount={2}
                         layout='vertical'>
-                            {CommunityPost}
+                            {CommunityItem}
                         </List>
                     )}
                 </AutoSizer>
             </S.PostContainer>
         </S.ListContainer>
-
     );
 }
 

@@ -2,8 +2,7 @@ import React, { useState } from 'react';
 import PostBox from '../../post/rallyPost/PostBox.tsx';
 import { VariableSizeList as List } from "react-window";
 import AutoSizer from "react-virtualized-auto-sizer";
-import { Link } from "react-router-dom";
-import * as S from "./PostHorizontalListStyle.ts"
+import * as S from "./style.ts"
 
 function PostHorizontalList(
     {postList, subjectTxt, path}
