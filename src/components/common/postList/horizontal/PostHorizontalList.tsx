@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import PostBox from '../../post/rallyPost/PostBox.tsx';
+import PostBox from '../../post/rallyPost/index.tsx';
 import { VariableSizeList as List } from "react-window";
 import AutoSizer from "react-virtualized-auto-sizer";
 import * as S from "./style.ts"

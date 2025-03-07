@@ -19,6 +19,9 @@ export const CategoryBox = styled.div`
     margin-top: 13px;
     text-align: center; 
     font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 `;
 
 export const TitleBox = styled.div`
@@ -26,6 +29,9 @@ export const TitleBox = styled.div`
     margin-top: 13px;
     text-align: center; 
     font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 `;
 
 
@@ -34,6 +40,9 @@ export const MasterBox = styled.div`
     margin-top: 13px;
     text-align: center; 
     font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 `;
 
 export const TimeBox = styled.div`
@@ -41,6 +50,9 @@ export const TimeBox = styled.div`
     margin-top: 13px;
     text-align: center; 
     font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 `;
 
 export const CommentBox = styled.div`
@@ -48,4 +60,7 @@ export const CommentBox = styled.div`
     margin-top: 13px;
     text-align: center; 
     font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 `;

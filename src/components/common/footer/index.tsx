@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Footer.tsx';
+import './index.tsx';
 import titleLogoImage from '../../../assets/titleLogo.png'
 import * as S from './style.ts';
 

@@ -35,6 +35,9 @@ export const Category = styled.div`
     border-color: black;
     border-style: solid;
     border-radius: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 `;
 
 export const TitleTxt = styled.div`

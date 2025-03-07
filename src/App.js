@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import Header from '../src/components/common/header/Header.tsx';
-import Footer from './components/common/footer/Footer.tsx';
+import Header from './components/common/header/index.tsx';
+import Footer from './components/common/footer/index.tsx';
 import Home from './components/main/home/index.tsx';
 import Rally from './components/main/rally/index.tsx';
 import Community from './components/main/community/index.tsx';
 import Job from './components/main/job/index.tsx';
-import Login from '../src/components/auth/login/Login.tsx';
-import Register from '../src/components/auth/register/Register.tsx';
+import Login from './components/auth/login/index.tsx';
+import Register from './components/auth/register/index.tsx';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {

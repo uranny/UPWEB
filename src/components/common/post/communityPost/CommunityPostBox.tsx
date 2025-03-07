@@ -18,10 +18,10 @@ function CommunityPostBox(
                 {post?.master ?? "작성자"}
             </S.MasterBox>
             <S.TimeBox>
-                {post?.toTimeTxt() ?? "작성일자"}
+                {post?.toTimeTxt() || "작성일자"}
             </S.TimeBox>
             <S.CommentBox>
-                {post?.toCommentTxt() ?? "댓글"}
+                {post?.toCommentTxt() || "댓글"}
             </S.CommentBox>
         </S.PostItemContainer>
     );
