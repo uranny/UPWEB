@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Header from './components/common/header/index.tsx';
-import Footer from './components/common/footer/index.tsx';
+import Header from './components/constants/header/index.tsx';
+import Footer from './components/constants/footer/index.tsx';
 import Home from './components/main/home/index.tsx';
 import Rally from './components/main/rally/index.tsx';
 import Community from './components/main/community/index.tsx';

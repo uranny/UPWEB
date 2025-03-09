@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import * as P from '../../data/DummyData.ts';
-import PostHorizontalList from '../../common/postList/horizontal/PostHorizontalList.tsx';
-import PostVerticalList from '../../common/postList/vertical/PostVerticalList.tsx';
-import MainSlider from '../../common/slider/MainSlider.tsx';
+import PostHorizontalList from '../../constants/list/horizontal/PostHorizontalList.tsx';
+import PostVerticalList from '../../constants/list/vertical/PostVerticalList.tsx';
+import MainSlider from '../../constants/slider/MainSlider.tsx';
+import QrBox from '../../constants/qrBox/index.tsx';
+import NotificationBox from '../../constants/notificationBox/index.tsx';
 import * as S from './style.ts';
 
 function Home() {
@@ -10,10 +12,8 @@ function Home() {
         <S.HomeContainer>
             <S.AdContainer>
                 <MainSlider/>
-                <S.QrBox>
-                </S.QrBox>
-                <S.NotificationBox>
-                </S.NotificationBox>
+                <QrBox/>
+                <NotificationBox/>
             </S.AdContainer>
             <S.SubBanner>
             </S.SubBanner>

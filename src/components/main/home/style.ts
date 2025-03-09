@@ -20,21 +20,7 @@ export const MainBanner = styled.div`
     grid-row: 1 / 3;
     background-color: aquamarine;
     border-radius: 5px;
-`
-
-export const QrBox = styled.div`
-    grid-column: 3/4;
-    grid-row: 1/2;
-    background-color: bisque;
-    border-radius: 5px;
-`
-
-export const NotificationBox = styled.div`
-    grid-column: 3/4;
-    grid-row: 2/3;
-    background-color: blue;
-    border-radius: 5px;
-`
+`;
 
 export const SubBanner = styled.div`
     display: block;

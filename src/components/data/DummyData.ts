@@ -1,3 +1,4 @@
+import BannerData from "./BannerData.ts"
 import CommunityPost from "./CommunityPost.ts"
 import Post from "./Post.ts"
 
@@ -129,5 +130,26 @@ export const postList = [
         master : "uranny", 
         category : "it-소프트웨어", 
         bookMark : false
+    })
+]
+
+export const BannerDataLst = [
+    new BannerData({
+        title: "타이틀1",
+        startTime : new Date(2024, 10, 16), 
+        endTime : new Date(2025, 10, 16), 
+        imgUrl : "https://cdn.m-i.kr/news/photo/202204/908783_674821_3748.png"
+    }),
+    new BannerData({
+        title: "타이틀2",
+        startTime : new Date(2024, 10, 16), 
+        endTime : new Date(2025, 10, 16), 
+        imgUrl : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3VDcssTAt6qRuC4dxv_C0C_WBiZCKMS-tgA&s"
+    }),
+    new BannerData({
+        title: "타이틀3",
+        startTime : new Date(2024, 10, 16), 
+        endTime : new Date(2025, 10, 16), 
+        imgUrl : "https://image.ajunews.com/content/image/2015/11/03/20151103164649884420.jpg"
     })
 ]
