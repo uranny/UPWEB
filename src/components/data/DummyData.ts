@@ -153,3 +153,5 @@ export const BannerDataLst = [
         imgUrl : "https://image.ajunews.com/content/image/2015/11/03/20151103164649884420.jpg"
     })
 ]
+
+export const CategoryLst : string[] = ["1", "343", "3242343", '1']

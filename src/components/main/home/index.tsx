@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import * as P from '../../data/DummyData.ts';
-import PostHorizontalList from '../../constants/list/horizontal/PostHorizontalList.tsx';
+import PostHorizontalList from '../../constants/list/horizontal/post/PostHorizontalList.tsx';
 import PostVerticalList from '../../constants/list/vertical/PostVerticalList.tsx';
 import MainSlider from '../../constants/slider/MainSlider.tsx';
 import QrBox from '../../constants/qrBox/index.tsx';

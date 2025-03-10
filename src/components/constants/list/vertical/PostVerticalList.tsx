@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CommunityPostBox from '../../post/communityPost/CommunityPostBox.tsx';
 import CommunityPost from '../../../data/CommunityPost.ts';
-import { VariableSizeList as List } from "react-window";
+import { VariableSizeList } from "react-window";
 import { To } from 'react-router-dom';
 import AutoSizer from "react-virtualized-auto-sizer";
 import * as S from "./style.ts"
@@ -31,7 +31,7 @@ function PostVerticalList(
                 <CommunityPostBox post={null}/>
                 <AutoSizer>
                     {({width, height}) => (
-                        <List
+                        <VariableSizeList
                         width={width}
                         height={height} 
                         itemCount={postList.length}
@@ -39,7 +39,7 @@ function PostVerticalList(
                         overscanCount={2}
                         layout='vertical'>
                             {CommunityItem}
-                        </List>
+                        </VariableSizeList>
                     )}
                 </AutoSizer>
             </S.PostContainer>

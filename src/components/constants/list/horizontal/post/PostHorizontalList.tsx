@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
-import PostBox from '../../post/rallyPost/index.tsx';
+import PostBox from '../../../post/rallyPost/index.tsx';
+import Post from '../../../../data/Post.ts';
 import { VariableSizeList as List } from "react-window";
 import AutoSizer from "react-virtualized-auto-sizer";
 import * as S from "./style.ts"
+import { To } from 'react-router-dom';
 
 function PostHorizontalList(
-    {postList, subjectTxt, path}
+    {postList, subjectTxt, path} : {postList : Post[], subjectTxt : string, path : To}
 ){
 
     const itemWidth = 300;
