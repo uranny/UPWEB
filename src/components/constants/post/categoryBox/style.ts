@@ -1,13 +1,14 @@
 import styled from "styled-components";
 
-export const CategoryContainer = styled.div`
+export const CategoryContainer = styled.li`
+    display: inline-block;
+    margin: 0px 8px;
     background-color: white;
-    border: 1px;
-    border-color: black;
-    border-style: solid;
+    border: 1px solid black;
     border-radius: 20px;
-    padding: 6px, 24px, 6px, 24px;
     color: black;
     font-size: 12px;
     font-weight: bolder;
+    text-align: center;
+    padding: 6px 24px;
 `;

@@ -1,4 +1,6 @@
 import styled from "styled-components";
 
 export const CommunityContainer = styled.div`
+    margin-left: 150px;
+    margin-right: 150px;
 `

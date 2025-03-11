@@ -15,7 +15,7 @@ function PostVerticalList(
         </div>
     );
 
-    const getItemSize = (index) => {
+    const getItemSize = () => {
         return 41
     }
 

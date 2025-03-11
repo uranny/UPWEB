@@ -2,10 +2,10 @@ import React from "react";
 import * as S from "./style.ts"
 
 function CategoryBox(
-    {text}:{text : string}
+    {key, text}:{key : number, text : string}
 ){
     return(
-        <S.CategoryContainer>
+        <S.CategoryContainer key={key}>
             {text}
         </S.CategoryContainer>
     )

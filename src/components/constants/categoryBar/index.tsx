@@ -1,13 +1,17 @@
 import React, { useState } from "react";
 import * as S from "./style.ts"
-import CategoryList from "../list/horizontal/category/index.tsx";
+import CategoryBox from "../post/categoryBox/index.tsx";
 
 function CategoryBar(
     {categoryList} : {categoryList : string[]}
 ){
     return (
         <S.CategoryBarContainer>
-            <CategoryList categoryList={categoryList}/>
+            <S.CategoryBoxContainer>
+                {categoryList.map((item, index)=>
+                    <CategoryBox key={index} text={item}/>
+                )}
+            </S.CategoryBoxContainer>
         </S.CategoryBarContainer>
     )
 }

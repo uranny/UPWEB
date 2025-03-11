@@ -154,4 +154,22 @@ export const BannerDataLst = [
     })
 ]
 
-export const CategoryLst : string[] = ["1", "343", "3242343", '1']
+export const CategoryLst : string[] = [
+    "전체",
+    "문학",
+    "학•논문", 
+    "과학•기술", 
+    "IT•소프트웨어", 
+    "스포츠", 
+    "미술•디자인",
+    "만화•캐릭터", 
+    "음악",
+    "댄스", 
+    "오디션", 
+    "사진", 
+    "영상", 
+    "아이디어", 
+    "산업", 
+    "음식", 
+    "기타"
+]
