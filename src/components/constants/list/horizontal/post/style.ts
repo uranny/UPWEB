@@ -26,6 +26,16 @@ export const PostContainer = styled.div`
     margin-top: 12px;
     margin-left: 8px;
     margin-right: 8px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 `;
 
 export const NavLink = styled(Link)`

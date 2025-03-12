@@ -52,7 +52,8 @@ function PostHorizontalList(
                         height={height} 
                         itemCount={postList.length}
                         itemSize={getItemSize}
-                        layout='horizontal'>
+                        layout='horizontal'
+                        >
                             {Post}
                         </List>
                     )}
