@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import * as S from "./style.ts"
 
 function CategoryBar(
-    {categoryList} : {categoryList : string[]}
+    {categoryList, onClick} : {categoryList : string[], onClick : (item : string) => void}
 ){
     const [selectIndex, setSelectIndex] = useState(0);
 
@@ -13,13 +13,20 @@ function CategoryBar(
     const blackColor = "black"
     const whiteColor = "white"
 
+    useEffect(() => {
+        onClick(categoryList[selectIndex])
+    })
+
     return (
         <S.CategoryBarContainer>
             <S.CategoryBoxContainer>
                 {categoryList.map((item, index)=>
                     <S.CategoryBox 
                         key={index}
-                        onClick={() => setSelectIndex(index)}
+                        onClick={() => {
+                            onClick(categoryList[selectIndex])
+                            setSelectIndex(index)
+                        }}
                         style={
                             {
                                 "backgroundColor" : selectColor(index, blackColor, whiteColor),

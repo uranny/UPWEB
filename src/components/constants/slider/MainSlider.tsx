@@ -8,17 +8,18 @@ function MainSlider(){
     const clickLeftBtn = () => {
         setSliderIndex(index => ((index -1 + BannerDataLst.length) % BannerDataLst.length ));
     }
-
     const clickRightBtn = () => {
         setSliderIndex(index => ((index +1) % BannerDataLst.length ));
     }
     
     useEffect( () => {
-        const interval = setInterval(() => {
+        console.log("use Effect")
+        const intervel = setInterval(() => {
             clickRightBtn()
+            console.log("next banner")
         }, 3000)
 
-        return () => clearInterval(interval)
+        return () => clearInterval(intervel)
     }, []);
 
     return (

@@ -3,7 +3,6 @@ import styled from "styled-components";
 export const HomeContainer = styled.div`
     margin-left: 150px;
     margin-right: 150px;
-    width: calc(100% - 300px);
 `
 
 export const AdContainer = styled.div`
