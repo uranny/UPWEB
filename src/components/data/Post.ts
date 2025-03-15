@@ -1,10 +1,10 @@
 export default class Post{
-    img : String
-    title : String
+    img : string
+    title : string
     startTime : Date
     endTime : Date
-    master : String
-    category : String
+    master : string
+    category : string
     bookMark : Boolean
 
     constructor({

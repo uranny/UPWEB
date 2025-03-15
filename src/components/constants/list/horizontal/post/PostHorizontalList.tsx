@@ -23,7 +23,7 @@ function PostHorizontalList(
 
     const Post = ({index, style}) => (
         <div style={{...style, width:itemWidth, paddingRight:setPadding(index)}}>
-            <PostBox post={postList[index]}/>
+            <PostBox post={postList[index]} path='/rally/page'/>
         </div>
     );
 
