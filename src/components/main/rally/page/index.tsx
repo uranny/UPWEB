@@ -9,4 +9,4 @@ function RallyPage(){
     )
 }
 
-export default RallyPage
+export default RallyPage;
